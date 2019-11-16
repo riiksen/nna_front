@@ -1,18 +1,5 @@
-module.exports = {
-  webpack: function(config, env) {
-    
-    //TODO: add MiniCssExtractPlugin on production
-    const lessRule = {
-      test: /\.less$/,
-      use: [
-        'style-loader',
-        'css-loader',
-        'less-loader'
-      ],
-    };
+const { addLessLoader, override } = require('customize-cra');
 
-    config.module.rules = config.module.rules.concat(lessRule);
-
-    return config;
-  }
-}
+module.exports = override(
+  addLessLoader(),
+);

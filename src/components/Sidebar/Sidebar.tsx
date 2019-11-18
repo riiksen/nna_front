@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import './sidebar.less';
 
 const { Sider } = Layout;
-const { SubMenu } = Menu;
 
 export class Sidebar extends React.Component {
   state = {

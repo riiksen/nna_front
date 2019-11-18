@@ -1,12 +1,25 @@
+import { Layout } from 'antd';
+import 'antd/dist/antd.css';
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 
-import { Router } from './router';
+import { Routes } from './routes';
+import { Sidebar } from './components/Sidebar/Sidebar';
+
+const { Content } = Layout;
 
 const App: React.FC = () => {
   return (
-    <div className='App'>
-      <Router />
-    </div>
+    <BrowserRouter>
+      <Layout>
+        <Layout>
+          <Sidebar />
+          <Content id="content">
+            <Routes />
+          </Content>
+        </Layout>
+      </Layout>
+    </BrowserRouter>
   );
 }
 

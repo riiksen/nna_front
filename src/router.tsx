@@ -7,6 +7,7 @@ import { Header } from './components/Header/Header';
 import { Index } from './components/Page/Index/Index';
 import { Jackpot } from './components/Page/Jackpot/Jackpot';
 
+// eslint-disable-next-line arrow-body-style
 const Router: React.FC = () => {
   return (
     <BrowserRouter>

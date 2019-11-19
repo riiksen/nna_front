@@ -4,10 +4,10 @@ import { Router } from './router';
 
 const App: React.FC = () => {
   return (
-    <div className='App'>
+    <div className="App">
       <Router />
     </div>
   );
-}
+};
 
 export { App };

@@ -4,14 +4,14 @@ import { Link } from 'react-router-dom';
 import './header.less';
 
 export class Header extends React.Component {
-  render() {
+  render(): React.ReactNode {
     return (
       <header>
         <ul>
-          <Link to='/'>
+          <Link to="/">
             <li>Home page</li>
           </Link>
-          <Link to='/jackpot'>
+          <Link to="/jackpot">
             <li>Jackpot</li>
           </Link>
         </ul>

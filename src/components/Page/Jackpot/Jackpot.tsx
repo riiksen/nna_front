@@ -1,7 +1,7 @@
 import React from 'react';
 
 export class Jackpot extends React.Component {
-  render() {
+  public render(): React.ReactNode {
     return (
       <div>Jackpot</div>
     );

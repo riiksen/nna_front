@@ -12,8 +12,8 @@ const Router: React.FC = () => {
     <BrowserRouter>
       <Header />
       <Switch>
-        <Route path='/' exact component={Index} />
-        <Route path='/jackpot' component={Jackpot} />
+        <Route path="/" exact component={Index} />
+        <Route path="/jackpot" component={Jackpot} />
       </Switch>
     </BrowserRouter>
   );

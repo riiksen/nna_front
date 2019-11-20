@@ -8,8 +8,8 @@ import { Jackpot } from './components/Page/Jackpot/Jackpot';
 const Routes: React.FC = () => {
   return (
     <Switch>
-      <Route path='/' exact component={Index} />
-      <Route path='/jackpot' component={Jackpot} />
+      <Route path="/" exact component={Index} />
+      <Route path="/jackpot" component={Jackpot} />
     </Switch>
   );
 };

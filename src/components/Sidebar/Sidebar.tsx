@@ -7,31 +7,41 @@ import './sidebar.less';
 const { Sider } = Layout;
 
 export class Sidebar extends React.Component {
-  state = {
+  public state = {
     collapsed: false,
+    collapsedWidth: 0,
   };
 
-  onCollapse = (collapsed: boolean): void => {
+  public onCollapse = (collapsed: boolean): void => {
     this.setState({ collapsed });
   };
 
-  render() {
+  public onBreakpoint = (broken: boolean): void => {
+    if(broken) {
+      this.setState({ collapsedWidth: 0 });
+    } else {
+      this.setState({ collapsedWidth: 80 })
+    }
+  };
+
+  public render(): React.ReactNode {
    return (
      <Sider
        collapsible
        collapsed={this.state.collapsed}
        onCollapse={this.onCollapse}
-       id='sidebar'
-       breakpoint='xs'
-       collapsedWidth='0'
+       onBreakpoint={this.onBreakpoint}
+       collapsedWidth={this.state.collapsedWidth}
+       id="sidebar"
+       breakpoint="xs"
      >
-       <Link to='/'>
-         <div className='logo' />
+       <Link to="/">
+         <div className="logo" />
        </Link>
        <Menu>
              <Menu.Item>
-               <Link to='/jackpot'>
-                 <Icon type='home' />
+               <Link to="/jackpot">
+                 <Icon type="home" />
                  <span>Home</span>
                </Link>
              </Menu.Item>

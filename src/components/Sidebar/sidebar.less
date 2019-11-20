@@ -1,15 +1,17 @@
 #sidebar {
   height:100vh;
-}
-#sidebar .logo {
-  height: 50px;
-  background: url('/logo192.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  padding: @gutter-small;
-  margin: @gutter 0;
-  &:hover {
-    cursor: pointer;
+  &.ant-layout-sider-collapsed {
+  }
+  .logo {
+    height: 50px;
+    background: url('/logo192.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: @gutter-small;
+    margin: @gutter 0;
+    &:hover {
+      cursor: pointer;
+    }
   }
 }

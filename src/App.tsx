@@ -3,6 +3,7 @@ import 'antd/dist/antd.css';
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 
+import { Chat } from './components/Chat/Chat'
 import { Routes } from './routes';
 import { Sidebar } from './components/Sidebar/Sidebar';
 
@@ -18,6 +19,7 @@ const App: React.FC = () => {
           <Content id="content">
             <Routes />
           </Content>
+          <Chat />
         </Layout>
       </Layout>
     </BrowserRouter>

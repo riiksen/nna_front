@@ -3,6 +3,7 @@ import React from 'react';
 
 import { Link } from 'react-router-dom';
 import './sidebar.less';
+import { User } from './User';
 
 const { Sider } = Layout;
 
@@ -45,6 +46,7 @@ export class Sidebar extends React.Component {
                  <span>Home</span>
                </Link>
              </Menu.Item>
+             <User />
        </Menu>
      </Sider>
    );
